@@ -1,0 +1,6 @@
+@SOPGraphQL_HostAddress = http://localhost:5274
+
+GET {{SOPGraphQL_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

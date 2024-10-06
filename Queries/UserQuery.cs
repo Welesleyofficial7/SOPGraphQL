@@ -1,12 +1,11 @@
-using SOPBackend;
-
 namespace SOPGraphQL.Queries;
 
+[ExtendObjectType("Query")]
 public class UserQuery
 {
     private readonly ApplicationContext _context;
 
-    public UserQuery(ApplicationContext context)
+    public UserQuery([Service] ApplicationContext context)
     {
         _context = context;
     }

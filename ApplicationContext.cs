@@ -1,7 +1,6 @@
 using System.Data.Entity;
-using SOPGraphQL;
+namespace SOPGraphQL;
 
-namespace SOPBackend;
 
 using Microsoft.EntityFrameworkCore;
 

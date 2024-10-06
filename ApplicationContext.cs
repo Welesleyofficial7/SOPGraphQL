@@ -1,8 +1,8 @@
 using System.Data.Entity;
-namespace SOPGraphQL;
-
+using SOPGraphQL;
 
 using Microsoft.EntityFrameworkCore;
+using DbContext = Microsoft.EntityFrameworkCore.DbContext;
 
 public class ApplicationContext : DbContext
 {
@@ -11,13 +11,13 @@ public class ApplicationContext : DbContext
     {
     }
     
-    public DbSet<User> Users { get; set; }
+    public Microsoft.EntityFrameworkCore.DbSet<User> Users { get; set; }
     
-    public DbSet<Order> Orders { get; set; }
+    public Microsoft.EntityFrameworkCore.DbSet<Order> Orders { get; set; }
     
-    public DbSet<OrderItem> OrderItems { get; set; }
+    public Microsoft.EntityFrameworkCore.DbSet<OrderItem> OrderItems { get; set; }
     
-    public DbSet<MenuItem> MenuItems { get; set; }
+    public Microsoft.EntityFrameworkCore.DbSet<MenuItem> MenuItems { get; set; }
     
-    public DbSet<Promotion> Promotions { get; set; }
+    public Microsoft.EntityFrameworkCore.DbSet<Promotion> Promotions { get; set; }
 }
